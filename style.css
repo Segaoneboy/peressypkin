@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Comic Sans MS';
+    src: url('/assets/fonts/Comic Sans MS.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Quicksand';
+    src: url('/assets/fonts/Quicksand-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Quicksand';
+    src: url('/assets/fonts/Quicksand-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@layer base {
+    body {
+        font-family: Quicksand, sans-serif;
+    }
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #ffffff;
+    background: linear-gradient(to top right, #40125B 10%, #200830, black 65%);
+}
+
+@keyframes headerAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.easeInOut {
+    opacity: 0;
+    animation: headerAnimation 1.5s ease-in-out 0.2s forwards;
+}
+
+.easeInOut2 {
+    opacity: 0;
+    animation: headerAnimation 1.5s ease-in-out 1.7s forwards;
+}
+
+@keyframes carousel {
+    0% {
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-200px * 8))
+    }
+}
+:root {
+    --slide-width: 30vw;
+    --slide-count: 8;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-1 * var(--slide-width) * var(--slide-count)));
+    }
+}
+
+.slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 130px;
+    margin: 0 auto;
+}
+
+.slider::before,
+.slider::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.slider::before {
+    left: 0;
+
+}
+
+.slider::after {
+    right: 0;
+}
+
+.slide-track {
+    display: flex;
+    width: 100%;
+    animation: scroll 30s linear infinite;
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: var(--slide-width);
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+@media (max-width: 640px) {
+    :root {
+        --slide-width: 40vw;
+    }
+}
+
+@media (max-width: 400px) {
+    :root {
+        --slide-width: 60vw;
+    }
+}

@@ -1,2 +1,2 @@
 ## Portfolio website
-This website belongs to the web developer Sergey Peresypkin.
+This website belongs to the web developer Sergey Peressypkin.

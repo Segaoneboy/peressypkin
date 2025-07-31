@@ -10,7 +10,7 @@ export default function Skills(){
                 className="flex flex-col justify-center-safe h-screen md:gap-y-20 gap-y-10"
                 initial={{ y: 100, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
-                viewport={{ once: true, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
             >
                 <h2 className="xl:text-8xl md:text-6xl text-5xl text-center font-extrabold">My Skills</h2>

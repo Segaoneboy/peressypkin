@@ -27,16 +27,16 @@ export default function Projects(){
                     transition={{ duration: 0.6, ease: "easeOut" }}
                 >
                     <div className="justify-items-center-safe ">
-                        <a href="https://segaoneboy.github.io/MEDI/" className="flex flex-col justify-center items-center " >
+                        <a href="https://noteboard-rho.vercel.app/" className="flex flex-col justify-center items-center " >
                             <Image
                                 loading={"lazy"}
-                                src="/medi.png"
-                                alt="MEDI - mediataion app"
+                                src="/noteboard.png"
+                                alt="Noteboard(NB) - note-taking app"
                                 width="450"
                                 height="450"
                                 className="rounded-lg w-[300px] md:w-[450px] h-auto md:hover:w-[600px] justify-items-center-safe"
                             />
-                            <h2 className="text-2xl font-bold text-center pt-4 md:hover:underline">MEDI / JavaScript</h2>
+                            <h2 className="text-2xl font-bold text-center pt-4 md:hover:underline">Notebaord / Fullstack app</h2>
                         </a>
                     </div>
                     <div className="justify-items-center-safe">

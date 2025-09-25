@@ -8,8 +8,8 @@ const nunito = Nunito({
 
 
 export const metadata: Metadata = {
-  title: "Sergey Peressypkin's portfolio",
-  description: "Sergey Peresypkin's portfolio on Next.js",
+  title: "Sergey Peressypkin portfolio",
+  description: "Sergey Peresypkin portfolio on Next.js",
 };
 
 export default function RootLayout({

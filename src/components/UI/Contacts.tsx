@@ -23,7 +23,7 @@ const Contacts = () => {
                     <a href="https://www.instagram.com/sega_oneboy/">
                         <FaInstagram color="white" size={40} className="my-4 mx-4" />
                     </a>
-                    <a href="https://www.linkedin.com/in/sega-oneboy-97b0332b4">
+                    <a href="http://www.linkedin.com/in/sergey-peressypkin-97b0332b4">
                         <FaLinkedinIn color="white" size={40} className="my-4 mx-4" />
                     </a>
                     <a href="https://t.me/segasdays">

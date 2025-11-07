@@ -10,6 +10,9 @@ const nunito = Nunito({
 export const metadata: Metadata = {
   title: "Sergey Peressypkin portfolio",
   description: "Sergey Peresypkin portfolio on Next.js",
+    verification: {
+        yandex: "65db42d9bbe8f4f5",
+    },
 };
 
 export default function RootLayout({

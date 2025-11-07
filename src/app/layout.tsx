@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import "./globals.css";
-
+import Head from "next/head";
 const nunito = Nunito({
   subsets: ["latin", "cyrillic"],
 });
@@ -19,11 +19,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={` ${nunito.className}  antialiased`}
-      >
-        {children}
-      </body>
+        <Head>
+            <meta name="yandex-verification" content="65db42d9bbe8f4f5" />
+        </Head>
+        <body className={` ${nunito.className}  antialiased`}>
+            {children}
+        </body>
     </html>
   );
 }

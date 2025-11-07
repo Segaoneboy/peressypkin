@@ -22,9 +22,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-        <Head>
-            <meta name="yandex-verification" content="65db42d9bbe8f4f5" />
-        </Head>
         <body className={` ${nunito.className}  antialiased`}>
             {children}
         </body>
